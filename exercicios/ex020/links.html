@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icone.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        body{
+            font-family: Marvel;
+            font-size: 2em;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            background-color: darkgreen;
+            color: white;
+        }
+        a:active{
+            color: black;
+            background-color: cyan;
+        }
+        a::before{
+            content:'*';
+        }
+        a::after{
+            content:' [link]';
+            text-decoration: none;
+            font-family: monospace;
+            color: darkblue;
+            font-size: 0.5em;
+        }
+        .SS{
+            background-color: chocolate;
+        }
+        .SS::after{
+            content: '>>';
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank" class="SS">site A</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">site B</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">site C</a></li>
+    </ul>
+</body>
+</html>

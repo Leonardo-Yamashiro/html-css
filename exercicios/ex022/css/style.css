@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+
+
+    *{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 1s;
+    }
+
+
+
+    header{
+        background-color: rgb(218, 238, 218);
+        margin: auto;
+        box-shadow: 0px 0px 20px rgba(0, 44, 0, 0.578);
+        min-height: 150px;
+        text-align: center;
+    }
+    header h1{
+        color: rgb(0, 70, 0);
+        padding: 5px;
+        margin: auto;
+        font-size: 3em;
+    }
+    header p{
+        margin: auto;
+        color: rgb(0, 70, 0);
+        padding: 5px;
+        line-height: 1em;
+    }
+
+
+
+    nav{
+        background-color: darkgreen;
+        box-shadow: 0px 0px 20px rgba(0, 44, 0, 0.289);
+    }
+    nav a{
+        color: white;
+        background-color: darkgreen;
+        border-radius: 0px 10px 10px 0px;
+        text-decoration: none;
+        margin: auto;
+        text-align: justify;
+        padding: 5px 10px 5px 5px;
+        box-shadow: 5px 0px 0px rgba(0, 44, 0, 0.578);
+        display: inline-block;
+    }
+    nav a:hover{
+        color: darkgreen;
+        background-color: lightgreen;
+    }
+    nav a::after{
+        content: ' >>';
+    }
+    nav span{
+        color: lightgreen;
+        background-color: darkgreen;
+        text-decoration: none;
+        margin: auto;
+        text-align: justify;
+        padding: 5px 10px 5px 5px;
+        box-shadow: 5px 0px 0px rgba(0, 44, 0, 0.578);
+    }
+    
+
+
+    body{
+        height: 100vh;
+        background-image: url('../imagens/Space.gif');
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: lightgreen;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+
+
+    main{
+        background-color: white;
+        max-width: 1200px;
+        padding: 15px;
+        margin: auto;
+        box-shadow: 0px 0px 20px rgba(0, 44, 0, 0.578);
+        border-radius: 10px;
+        border: 3px solid darkgreen;
+    }
+    main h1{
+        color: rgb(0, 70, 0);
+        background-image: linear-gradient(to right,lightgreen,transparent,lightgreen);
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        font-size: 2em;
+        border-radius: 10px;
+    }
+    main h2{
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        color: rgb(0, 70, 0);
+        font-size: 1.5em;
+    }
+    main p{
+        text-align: justify;
+        text-indent: 20px;
+        padding: 10px;
+        margin: auto;
+        color: darkgreen;
+        line-height: 1em;
+    }
+    dl,ol,ul{
+        padding: 10px 0px;
+    }
+    main dd{
+        text-align: justify;
+        text-indent: 20px;
+        padding: 10px;
+        margin: auto;
+        color: darkgreen;
+        line-height: 1em;
+    }
+    main dt{
+        text-align: justify;
+        text-indent: 50px;
+        margin: auto;
+        font-weight: bold;
+        color: rgb(0, 70, 0);
+    }
+    main li{
+        text-align: justify;
+        text-indent: 20px;
+        margin: auto;
+        font-weight: bold;
+        color: rgb(0, 70, 0);
+        list-style-position: inside;
+        padding: 10px;
+        line-height: 1em;
+    }
+    main a{
+        text-decoration: none;
+        color: rgb(0, 70, 0);
+    }
+    main a:hover{
+        color: lightgreen;
+    }
+    main div{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+
+
+    footer{
+        background-color: rgb(0, 70, 0);
+        box-shadow: 0px 0px 20px rgba(0, 44, 0, 0.578);
+        padding: 10px;
+        margin: auto;
+    }
+    footer p{
+        color: white;
+        text-align: center;
+        margin: auto;
+        padding: 5px;
+        line-height: 1em;
+    }
+    footer a{
+        text-decoration: none;
+        color: lightgreen;
+        border-radius: 10px;
+    }
+    footer a:hover{
+        background-color: lightgreen;
+        color: rgb(0, 70, 0);
+    }
+    footer a::before{
+        content: '<< ';
+    }
+
+    
+    
+    a:hover{
+        font-weight: bolder;
+        padding: 5px 20px;
+    }
+    img{
+        border-radius: 10px;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    div.video{
+        margin: 0px 0px 10px 0px;
+        padding-bottom: 55%;
+        position: relative;
+        background-color: darkgreen;
+        border-radius: 10px;
+    }
+    div.video > iframe{
+        position: absolute;
+        border-radius: 10px;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+    }
+    a img{
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin: auto;
+        padding: 0px 5px;
+    }
+    a img:hover{
+        width: 100px;
+        height: 100px;
+    }
+    .container{
+        position: relative;
+        min-height: 90px;
+        max-width: 1100px;
+    }
+    .conteudo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }

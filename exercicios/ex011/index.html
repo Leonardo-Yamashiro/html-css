@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias em HTML</title>
+    <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir o site em dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/desenho300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/desenho700.png" type="image/png">
+        <img src="imagens/desenho1000.png" alt="imagem grande">
+    </picture>
+    <h1>Reproduzir Audio</h1>
+    <p>Tente abrir o arquivo de audio</p>
+    <audio src="media/mess-call.mp3" controls></audio>
+    <p>Outro metodo</p>
+    <audio preload="metadata" controls loop>
+        <source src="media/mess-call.mp3" type="audio/mpeg">
+        <source src="media/mess-call.ogg" type="audio/ogg">
+        <source src="media/mess-call.wav" type="audio/wav">
+        <p>link para copiar <a href="media/mess-call.mp3">music</a></p>
+    </audio>
+</body>
+</html>

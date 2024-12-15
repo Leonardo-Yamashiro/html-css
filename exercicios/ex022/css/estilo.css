@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'avengersT';
+    src: url(../fonte/heroesassemble3d.ttf);
+}
+@font-face {
+    font-family: 'avengers';
+    src: url(../fonte/heroesassemblebold2.ttf);
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: darkgreen;
+}
+body{
+    background-image: linear-gradient(to bottom,lightgreen,darkgreen);
+}
+main{
+    background-color: white;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+}
+main h1{
+    background-image: linear-gradient(to right, lightgreen,white 70%);
+    text-align: center;
+    border-radius: 2%;
+}
+main a{
+    text-align: center;
+}
+main dt, h2{
+    text-align: center;
+}
+header h1{
+    text-align: center;
+}
+header *, footer *{
+    background-color: darkgreen;
+    color: lightgreen;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: lightgreen;
+}
+a::after{
+    content: ' >>';
+    color: rgb(69, 33, 102);
+}
+nav{
+    background-color: darkgreen;
+}
+nav>a:hover{
+    color: white;
+    background-color: rgb(0, 64, 0);
+}
+nav>a{
+    color: lightgreen;
+    padding-right: 10px;
+    background-color: darkgreen;
+}
+nav a::after{
+    text-decoration: none;
+    content: "";
+}
+footer a::before{
+    text-decoration: none;
+    content: "<<";
+}
+footer a::after{
+    text-decoration: none;
+    content: "";
+}
+img{
+    size: 100%;
+    border-radius: 2%;
+}
+iframe{
+    size: 100%;
+    border-radius: 2%;
+}
+footer a:hover{
+    color: white;
+}

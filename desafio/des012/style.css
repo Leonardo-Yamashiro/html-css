@@ -1,0 +1,72 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    background-color: white;
+    text-align: justify;
+    min-height: 100vh;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+header h1{
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+header p{
+    padding-bottom: 50px;
+}
+
+
+div{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-family: cursive;
+    line-height: 2em;
+}
+div p{
+    padding: 10px;
+    width: 400px;
+}
+div.partA{
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+div.partA p{
+    background-color: rgba(0, 0, 0, 0.563);
+    color: white;
+}
+div.partB{
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+div.partB p{
+    background-color: rgba(0, 0, 0, 0.563);
+    color: white;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
