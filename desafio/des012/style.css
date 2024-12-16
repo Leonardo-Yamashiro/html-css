@@ -27,30 +27,37 @@ div{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    font-family: cursive;
-    line-height: 2em;
 }
 div p{
     padding: 10px;
     width: 400px;
+    line-height: 2em;
+    font-family: cursive;
 }
 div.partA{
     background-image: url(imagens/background001.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-color: darkgray;
+    background-position: right center;
+    box-shadow: inset 6px 6px 20px 0px rgba(0, 0, 0, 0.542);
 }
 div.partA p{
-    background-color: rgba(0, 0, 0, 0.563);
+    background-color: rgba(0, 0, 0, 0.312);
     color: white;
+    text-shadow: 2px 1px 3px black;
 }
 div.partB{
     background-image: url(imagens/background002.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-color: darkgray;
+    box-shadow: inset 6px 6px 20px 0px rgba(0, 0, 0, 0.542);
 }
 div.partB p{
-    background-color: rgba(0, 0, 0, 0.563);
+    background-color: rgba(0, 0, 0, 0.312);
     color: white;
+    text-shadow: 2px 1px 3px black;
 }
 
 
