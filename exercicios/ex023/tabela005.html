@@ -6,12 +6,11 @@
     <title>Tabela 005</title>
     <style>
         body{
-            background-color: darkslateblue;
             font-family: Arial, Helvetica, sans-serif;
             padding: 30px;
         }
         h1{
-            color: white;
+            color: black;
             margin: auto;
             text-align: center;
             padding: 10px;
@@ -25,7 +24,7 @@
             position: relative;
         }
         caption{
-            color: white;
+            color: gray;
             padding: 10px;
             font-variant: small-caps;
         }
@@ -36,10 +35,10 @@
             padding: 10px;
             text-align: center;
             vertical-align: middle;
-            background-color: white;
         }
         th{
-            background-color: greenyellow;
+            background-color: black;
+            color: white;
             font-variant: small-caps;
         }
         .mat{
@@ -49,11 +48,20 @@
             position: sticky;
             top: -1px;
         }
+        col.cnome {
+            background-color: cyan;
+        }
     </style>
 </head>
 <body>
     <h1>Tabela 005</h1>
     <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprofissao">
+    </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
