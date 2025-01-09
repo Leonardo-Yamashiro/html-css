@@ -41,3 +41,22 @@ iframe.itela{
     height: 472px;
     border: 1px solid lightgray;
 }
+
+section.redes{
+    text-align: right;
+}
+
+section.redes > a > img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.564);
+    box-sizing: border-box;
+}
+
+section.redes > a > img:hover{
+    border: 2px solid white;
+    transform: translate(-5px,0px);
+    box-shadow: 7px 2px 5px rgba(0, 0, 0, 0.564);
+    transition: transform 0.5s, border 0.1s;
+}
