@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    display: block;
+    background-color: darkred;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+}
+a:hover{
+    background-color: red;
+}
+a::after{
+    content: ' >>';
+}
