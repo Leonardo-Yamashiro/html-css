@@ -1,0 +1,16 @@
+@charset "UTF-8";
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+body{
+    background-color: antiquewhite;
+}
