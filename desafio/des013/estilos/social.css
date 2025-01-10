@@ -25,9 +25,11 @@ a{
     color: white;
     font-variant: small-caps;
 }
+
 a:hover{
     background-color: red;
 }
+
 a::after{
     content: ' >>';
 }
