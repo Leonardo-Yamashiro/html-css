@@ -9,8 +9,17 @@ h1{
     margin: auto;
     text-align: center;
     font-variant: small-caps;
+    padding: 10px;
 }
 
 body{
     background-color: antiquewhite;
+}
+
+form{
+    padding: 10px;
+}
+
+form>p{
+    padding: 3px;
 }
