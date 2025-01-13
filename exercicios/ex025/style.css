@@ -13,7 +13,7 @@ h1{
 }
 
 body{
-    background-color: aliceblue;
+    background-color: whitesmoke;
 }
 
 form{
@@ -22,5 +22,8 @@ form{
 
 form>p{
     padding: 3px;
-    font-variant: small-caps;
+}
+
+p:hover{
+    background-color: lightgreen;
 }
