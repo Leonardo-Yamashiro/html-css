@@ -20,10 +20,28 @@ form{
     padding: 10px;
 }
 
-form>p{
-    padding: 3px;
+p{
+    padding: 10px;
+    margin: auto;
+    font-size: 1em;
+    line-height: 1em;
 }
 
 p:hover{
     background-color: lightgreen;
+}
+
+fieldset{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+input{
+    padding: 5px;
+}
+
+legend{
+    font-variant: small-caps;
+    font-size: 1.5em;
 }
