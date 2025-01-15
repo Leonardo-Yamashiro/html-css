@@ -10,18 +10,21 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="iemail">E-mail: </label>
-            <input type="email" name="email" id="iemail" autocomplete="email" required>
-        </p>
-        <p>
-            <label for="itelefone">Telefone: </label>
-            <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required pattern="^[0-9]{4,5}-[0-99]{4}$" placeholder="0000-0000">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="xxxxx@xx.com">
+            </p>
+            <p>
+                <label for="itelefone">Telefone: </label>
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required pattern="^[0-9]{4,5}-[0-99]{4}$" placeholder="0000-0000">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
