@@ -27,10 +27,6 @@ p{
     line-height: 1em;
 }
 
-p:hover{
-    background-color: lightgreen;
-}
-
 fieldset{
     padding: 10px;
     border: 2px solid black;
