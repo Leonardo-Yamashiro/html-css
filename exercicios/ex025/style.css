@@ -31,6 +31,7 @@ fieldset{
     padding: 10px;
     border: 2px solid black;
     border-radius: 15px;
+    margin: auto;
 }
 
 input{
@@ -39,5 +40,5 @@ input{
 
 legend{
     font-variant: small-caps;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
