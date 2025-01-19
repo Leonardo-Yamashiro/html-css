@@ -11,40 +11,6 @@
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
-            <legend>Dados Pessoais</legend>
-            <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" required size="30" placeholder="nome completo" autocomplete="name">
-            </p>
-            <p>
-                <label for="imedia">Media: </label>
-                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
-            </p>
-            <p>
-                <label for="iperiodo">Periodo: </label>
-                <input type="date" name="periodo" id="iperiodo" required>
-            </p>
-            <p>
-                <label for="ihora">Hora: </label>
-                <input type="time" name="hora" id="ihora">
-            </p>
-            <p>
-                <label for="imes">Mês: </label>
-                <input type="month" name="mes" id="imes">
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Contatos</legend>
-            <p>
-                <label for="iemail">E-mail: </label>
-                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="xxxxx@xx.com">
-            </p>
-            <p>
-                <label for="itelefone">Telefone: </label>
-                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required pattern="^[0-9]{4,5}-[0-99]{4}$" placeholder="0000-0000">
-            </p>
-        </fieldset>
-        <fieldset>
             <legend>Esportes Favoritos</legend>
             <input type="checkbox" name="espfut" id="iespfut"><label for="iespfut">Futebol</label> <br>
             <input type="checkbox" name="espvid" id="iespvid"><label for="iespvid" >Video Game</label> <br>
@@ -54,28 +20,6 @@
             <legend>Verdadeiro ou Falso</legend>
             <input type="radio" name="verd" id="iverd" value="V"><label for="iverd">Verdadeiro</label> <br>
             <input type="radio" name="verd" id="ifals" value="F"><label for="ifals">Falso</label>
-        </fieldset>
-        <fieldset>
-            <legend>Senha</legend>
-            <p>
-                <label for="isenha">Senha: </label>
-                <input type="password" name="" id="isenha" required minlength="8" maxlength="15" size="30" placeholder="minimo de 8, maximo de 15" autocomplete="current-password">
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>EXTRAS</legend>
-            <p>
-                <label for="icor">Cor Favorita: </label>
-                <input type="color" name="cor" id="icor">
-            </p>
-            <p>
-                <label for="inivel">Nivel de Dificuldade: </label>
-                <input type="range" name="nivel" id="inivel" min="1" max="10" value="10">
-            </p>
-            <p>
-                <label for="ifoto">Adicionar Imagem: </label>
-                <input type="file" name="foto" id="ifoto">
-            </p>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
