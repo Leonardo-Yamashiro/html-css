@@ -32,6 +32,7 @@ fieldset{
     border: 2px solid black;
     border-radius: 15px;
     margin: auto;
+    background-color: white;
 }
 
 input{
