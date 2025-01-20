@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario 009</title>
+    <title>Formulario 010</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="inum">Numero: </label>
-            <input type="range" name="num" id="inum" value="50" oninput="ival.innerHTML=Number(inum.value)">
-            <output id="ival">50</output>
+            <label for="iano">Ano em que você nasceu: </label>
+            <input type="number" name="ano" id="iano" oninput="calcIdade()">
         </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output></p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
+    <script>
+        function calcIdade(){
+            let atual=new Date().getFullYear()
+            iidade.innerHTML=Number(atual)-Number(iano.value)
+        }
+    </script>
 </body>
 </html>
