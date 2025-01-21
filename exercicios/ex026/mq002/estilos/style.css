@@ -12,6 +12,8 @@ html, body{
     background-color: #233eff;
 }
 h1{
+    text-align: center;
     color: white;
     padding: 10px;
+    font-variant: small-caps;
 }
