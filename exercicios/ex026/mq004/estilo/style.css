@@ -19,10 +19,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 main{
-    background-color: rgba(255, 255, 255, 0.736);
+    background-color: rgba(255, 255, 255, 0.537);
     width: 80vw;
     margin: auto;
     border-radius: 15px;

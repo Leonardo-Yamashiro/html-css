@@ -1,7 +1,28 @@
 @charset "UTF-8";
 
 /* Todas as demais midias*/
+/* Typical Devide Breakpoints:
+telas pequenas: ate 600px
+celular: 600px - 768px  > 320px or 480px
+tablet: 769px - 992px  > 768px 
+computador: 993px - 1200px > 1920px
+tv: mais de 1200px
+*/
 
-@media print{
-    
+@media print{}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1920px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display: none;}
+    img#computador{display: block;}
 }
