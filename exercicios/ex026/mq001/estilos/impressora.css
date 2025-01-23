@@ -25,10 +25,12 @@ h1{
 
 h2{
     padding: 10px;
+    font-size: 1em;
 }
 
 p{
     padding: 10px;
+    line-height: 1em;
 }
 
 article{
