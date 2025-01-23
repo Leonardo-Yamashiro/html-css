@@ -9,7 +9,38 @@ computador: 993px - 1200px > 1920px
 tv: mais de 1200px
 */
 
-@media print{}
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1em;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background: white url(../imagens/back-print.jpg);/* background-image não funciona em impressoras*/
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90%;
+    }
+    
+    h1{
+        text-align: center;
+        color: black;
+        text-shadow: none;
+    }
+
+    main::after{
+        content: 'Impressão do site';
+        text-decoration: overline;
+    }
+
+    img#phone{display: none;}
+    img#impresora{display: block;}
+}
 
 @media screen and (min-width: 600px) and (max-width: 768px){
     body{
