@@ -14,4 +14,8 @@
         padding: 0px;
         width: 120px;
     }
+
+    main{
+        max-width: 800px;
+    }
 }
