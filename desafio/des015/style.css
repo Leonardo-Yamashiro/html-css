@@ -8,5 +8,6 @@
 }
 
 body, html{
-    background-image: linear-gradient(to bottom,green,purple);
+    background-image: linear-gradient(45deg,black,lightgreen);
+    height: 100vh;
 }
