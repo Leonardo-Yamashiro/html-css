@@ -6,6 +6,7 @@
     }
     section#login{
         width: 80vw;
+        height: 270px;
     }
     section#login > div#imagem{
         float: left;
@@ -20,6 +21,7 @@
     section#login > div#formulario > p{
         text-align: center;
         font-size: 1em;
+        margin: 10px 0px;
     }
 }
 
@@ -29,6 +31,7 @@
     }
     section#login{
         width: 900px;
+        height: 300px;
     }
     section#login > div#imagem{
         float: right;
@@ -43,5 +46,13 @@
     section#login > div#formulario > p{
         text-align: center;
         font-size: 1em;
+        margin: 15x 0px;
+    }
+
+    section#login > div#formulario > form > div.campo{
+        margin: 15px 0px;
+    }
+    section#login > div#formulario > form > input[type=submit], section#login > div#formulario > form > a.botao{
+        margin: 15x 0px;
     }
 }
