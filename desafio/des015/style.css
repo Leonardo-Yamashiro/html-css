@@ -50,4 +50,9 @@ section#login > div#formulario{
 
 section#login > div#formulario > h1{
     text-align: center;
+    margin-bottom: 10px;
+}
+
+section#login > div#formulario > p{
+    font-size: 0.8em;
 }
