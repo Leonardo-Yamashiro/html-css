@@ -102,7 +102,6 @@ section#login > div#formulario > form > input[type=submit], section#login > div#
     color: lightgreen;
     border-radius: 5px;
     margin: 5px 0px;
-    vertical-align: middle;
 
     text-decoration: none;
 }
