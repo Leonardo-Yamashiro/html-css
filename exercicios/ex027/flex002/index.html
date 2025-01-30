@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexBox 001</title>
+    <title>FlexBox 002</title>
     <style>
         *{
             padding: 0px;
@@ -13,14 +13,19 @@
             background-color: darkslateblue;
             display: flex;
             padding: 15px;
+            flex-direction: column;
         }
         div.item{
             background-color: yellowgreen;
             border: 3px solid white;
-            flex: auto;
             text-align: center;
             padding: 5px;
             border-radius: 10px;
+        }
+        div.item:hover{
+            background-color: white;
+            border: 3px solid black;
+            cursor: pointer;
         }
     </style>
 </head>
