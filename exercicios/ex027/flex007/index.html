@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox 007</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        div.conteiner{
+            background-color: darkslateblue;
+            display: flex;
+            padding: 15px;
+            border: 3px solid darkorange;
+            flex-flow: row wrap;
+        }
+        div.item{
+            background-color: yellowgreen;
+            border: 3px solid white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        div.item:hover{
+            background-color: white;
+            border: 3px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item" style="order: -1;">Exemplo de Bloco B</div>
+        <div class="item" style="order: -2;">Exemplo de Bloco C</div>
+        <div class="item" style="order: 1;">Exemplo de Bloco D</div>
+        <div class="item" style="order: 2;">Exemplo de Bloco E</div>
+        <div class="item" style="order: 3;">Exemplo de Bloco F</div>
+        <div class="item" style="background-color:darkorange;">Exemplo de Bloco A</div>
+    </div>
+</body>
+</html>
