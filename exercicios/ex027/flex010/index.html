@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexBox 009</title>
+    <title>FlexBox 010</title>
     <style>
         *{
             padding: 0px;
@@ -16,9 +16,7 @@
             padding: 10px;
             margin: auto;
             border: 5px solid darkorange;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
+            flex-flow: row nowrap;
         }
         div.item{
             background-color: yellowgreen;
@@ -26,7 +24,8 @@
             text-align: center;
             padding: 10px;
             border-radius: 10px;
-            flex-basis: 500px;
+            flex-grow: 1;
+            flex-shrink: 1;
         }
         div.item:hover{
             background-color: white;
@@ -40,8 +39,6 @@
         <div class="item">Exemplo de Bloco A</div>
         <div class="item">Exemplo de Bloco B</div>
         <div class="item">Exemplo de Bloco C</div>
-        <div class="item">Exemplo de Bloco D</div>
-        <div class="item">Exemplo de Bloco E</div>
     </div>
 </body>
 </html>
