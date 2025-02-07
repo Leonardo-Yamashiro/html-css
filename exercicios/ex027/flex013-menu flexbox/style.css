@@ -26,21 +26,15 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-header div.menutitulo{
-    border: 1px dashed black;
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
+header h1{
+    border: 1px dotted black;
     flex: 1 0 500px;
-}
-header div.menutitulo h1{
-    padding: 0px;
 }
 
 header menu{
-    border: 1px dashed black;
+    border: 1px dotted black;
+    height: 50px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -50,7 +44,8 @@ header menu{
 }
 header menu a{
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
+    text-align: center;
     text-decoration: none;
     color: white;
     background-color: black;
@@ -60,6 +55,7 @@ header menu a:hover{
     color: black;
     background-color: white;
     cursor: pointer;
+    transition-duration: 0.7s;
 }
 
 
