@@ -28,19 +28,15 @@ header{
 }
 
 header h1{
-    border: 1px dotted black;
-    flex: 1 0 500px;
+    flex: 1 0 200px;
 }
 
 header menu{
-    border: 1px dotted black;
-    height: 50px;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    flex: 1 0 500px;
+    flex: 1 0 200px;
 }
 header menu a{
     margin: 5px;
@@ -50,6 +46,7 @@ header menu a{
     color: white;
     background-color: black;
     border-radius: 10px;
+    flex: none;
 }
 header menu a:hover{
     color: black;
