@@ -23,11 +23,12 @@
             width: 90vw;
             border-radius: 20px;
             border: 5px solid green;
-            padding: 10px;
+            padding: 10px 0px 0px 0px;
         }
         h1,p,div{
             padding: 10px;
             margin: auto;
+            text-align: justify;
         }
         div#area{
             background-color: green;
@@ -39,7 +40,6 @@
         }
         p.formulario{
             text-align: center;
-            color: darkgreen;
         }
         input{
             border: 2px solid green;
@@ -49,11 +49,11 @@
         input.botao{
             background-color: green;
             color: white;
-            width: 100%;
         }
         p.resultado{
             width: 100%;
             text-align: center;
+            color: green;
         }
     </style>
 </head>
@@ -70,8 +70,8 @@
             <input type="number" name="number1" id="inumber1">
             <label for="inumber2">Digite Numero: </label>
             <input type="number" name="number2" id="inumber2">
+            <input type="button" value="Somar" onclick="somar()" class="botao">
         </p>
-        <input type="button" value="Somar" onclick="somar()" class="botao">
         <p class="resultado" id="iresultado"></p>
 
     </main>
