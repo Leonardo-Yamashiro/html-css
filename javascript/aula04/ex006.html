@@ -44,19 +44,23 @@
         <h1>Iniciando Estudos com DOM (Document Object Model)</h1>
         <p>Aprendendo a usar o DOM em javascript</p>
         <p id="msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus culpa velit provident consequuntur doloremque maiores in veniam qui praesentium labore, ducimus ipsa dignissimos quis tempore impedit corporis rerum libero laborum.</p>
-        <div id="area" onclick="clicar()" onmouseenter="enter()" onmouseleave="sair()">Clique Aqui</div>
+        <div id="area">Clique Aqui</div>
     </main>
     <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click',clicar)
+        a.addEventListener('mouseenter',enter)
+        a.addEventListener('mouseleave',sair)
+
         function clicar(){
-            var a = window.document.getElementById('area')
             a.innerText = 'Clicou!'
+            a.style.background = 'red'
         }
         function enter(){
-            var a = window.document.getElementById('area')
             a.innerText = 'Entrou!'
+            a.style.background = 'green'
         }
         function sair(){
-            var a = window.document.getElementById('area')
             a.innerText = 'Saiu!'
         }
     </script>
