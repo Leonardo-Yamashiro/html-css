@@ -23,7 +23,7 @@
             width: 90vw;
             border-radius: 20px;
             border: 5px solid green;
-            padding: 10px 0px 0px 0px;
+            padding: 10px 0px 10px 0px;
         }
         h1,p,div{
             padding: 10px;
@@ -33,27 +33,36 @@
         div#area{
             background-color: green;
             color: white;
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
+            width: 100%;
+            padding: 10px;
             text-align: center;
         }
         p.formulario{
-            text-align: center;
+            text-align: justify;
+            line-height: 40px;
+        }
+        label{
+            max-width: 100px;
         }
         input{
             border: 2px solid green;
             padding: 5px;
             border-radius: 5px;
+            width: 200px;
         }
         input.botao{
             background-color: green;
             color: white;
+            width: 100px;
         }
         p.resultado{
-            width: 100%;
+            width: 97%;
+            padding: 10px;
             text-align: center;
-            color: green;
+            background-color: rgba(144, 238, 144, 0.4);
+            border: 2px solid green;
+            color: darkgreen;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -69,8 +78,12 @@
             <label for="inumber1">Digite Numero: </label>
             <input type="number" name="number1" id="inumber1" step="0.1">
             <input type="button" value="Avaliar" onclick="avaliar()" class="botao">
+            <br>
+            <label for="itexto">Texto: </label>
+            <input type="text" name="texto" id="itexto">
+            <input type="button" value="Ler" onclick="ler()" class="botao">
         </p>
-        <p class="resultado" id="iresultado"></p>
+        <p class="resultado" id="iresultado">RESPOSTA</p>
 
     </main>
     <script>
@@ -92,6 +105,15 @@
         function changeback(){
             var cor = window.document.getElementById('area')
             cor.style.background='green'
+        }
+        function ler(){
+            var txt = window.document.getElementById('itexto')
+            var res = window.document.getElementById('iresultado')
+            if(txt == 'Brasil'){
+                res.innerText = 'Brasil'
+            }else{
+                res.innerText = 'Estrangeiro'
+            }
         }
     </script>
 </body>
