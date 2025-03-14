@@ -21,8 +21,8 @@
             justify-content: center;
             align-items: center;
         }
-        header, footer, main{
-            flex: 1 0 auto;
+        footer, header, main{
+            flex: 1 1 300px;
         }
         header>h1, footer>p{
             text-align: center;
@@ -43,19 +43,29 @@
             background-color: white;
             border-radius: 20px;
             width: 500px;
-            height: 500px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        }
+        div{
+            padding: 10px;
+            text-align: center;
+        }
+        img{
+            width: 300px;
         }
     </style>
 </head>
-<body>
+<body onload = "carregar()" id="bd">
     <header>
-        <h1>Título</h1>
+        <h1>Hora do Dia</h1>
     </header>
 
     <main>
-        <div></div>
-        <div></div>
+        <div id="mensagem">
+            Aqui vai aparecer a mensagem...
+        </div>
+        <div>
+            <img id="imagem" src="imagens/manha.png" alt="foto da manha">
+        </div>
     </main>
 
     <footer>
