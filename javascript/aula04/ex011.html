@@ -18,26 +18,32 @@
         body{
             display: flex;
             flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
         }
         header, footer, main{
             flex: 1 0 auto;
-            justify-content: space-evenly;
-            border: 2px solid red;
         }
-        header>h1,footer>p{
+        header>h1, footer>p{
             text-align: center;
             padding: 10px;
             color: white;
         }
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
         footer{
             font-style: italic;
         }
+
+        
         main{
             background-color: white;
             border-radius: 20px;
             width: 500px;
             height: 500px;
-            margin: auto;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
         }
     </style>
