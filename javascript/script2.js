@@ -20,15 +20,39 @@ function verificar(){
             if(idade <= 3){
                 imagem.setAttribute('src','imagens/bebe.jpg')
             }
-            else if (idade <= 12){}
-            else if(idade <= 21){}
-            else if(idade <= 60){}
-            else{}
+            else if (idade <= 12){
+                imagem.setAttribute('src','imagens/criança.jpg')
+            }
+            else if(idade <= 21){
+                imagem.setAttribute('src','imagens/jovem.jpg')
+            }
+            else if(idade <= 60){
+                imagem.setAttribute('src','imagens/adulto.jpg')
+            }
+            else{
+                imagem.setAttribute('src','imagens/idoso.jpg')
+            }
             resposta.innerHTML = `Homem de ${idade} anos`
             resposta.appendChild(imagem)
         }
         else{
+            if(idade <= 3){
+                imagem.setAttribute('src','imagens/bebe.jpg')
+            }
+            else if (idade <= 12){
+                imagem.setAttribute('src','imagens/criança.jpg')
+            }
+            else if(idade <= 21){
+                imagem.setAttribute('src','imagens/jovem.jpg')
+            }
+            else if(idade <= 60){
+                imagem.setAttribute('src','imagens/adulto.jpg')
+            }
+            else{
+                imagem.setAttribute('src','imagens/idoso.jpg')
+            }
             resposta.innerHTML = `Mulher de ${idade} anos`
+            resposta.appendChild(imagem)
         }
     }
 }
