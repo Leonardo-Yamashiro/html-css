@@ -49,6 +49,18 @@
             padding: 10px;
             text-align: center;
         }
+        input.botao{
+            padding: 5px;
+            width: 100%;
+            background-color: darkgreen;
+            color: white;
+            border: none;
+        }
+        input.botao:hover{
+            background-color: yellowgreen;
+            color: darkgreen;
+            cursor: pointer;
+        }
         img{
             width: 400px;
         }
@@ -60,7 +72,20 @@
     </header>
 
     <main>
-        <div></div>
+        <div>
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano"  min="0">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <input type="button" value="Verificar" class="botao" onclick="verificar()">
+        </div>
         <div id="resp"></div>
     </main>
 
