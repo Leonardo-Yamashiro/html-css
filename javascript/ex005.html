@@ -44,10 +44,10 @@
 <body>
     <main>
         <h1>Iniciando Estudos com DOM (Document Object Model)</h1>
-        <p>Aprendendo a usar o DOM em javascript</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
         <p id="msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus culpa velit provident consequuntur doloremque maiores in veniam qui praesentium labore, ducimus ipsa dignissimos quis tempore impedit corporis rerum libero laborum.</p>
-        <div class="box">clique aqui</div>
-        <div>clique aqui</div>
+        <div class="box" onclick="clicA()">clique aqui</div>
+        <div onclick="clicB()">clique aqui</div>
     </main>
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]
@@ -58,11 +58,19 @@
 
         var d = window.document.getElementById('msg')
         d.style.background = 'yellow'
-        d.innerText = 'texto editado por javascript'
+        d.innerText = 'Texto editado por JavaScript'
 
         var e = window.document.querySelector('div.box')
         e.style.background = 'darkgreen'
         e.style.color = 'white'
+
+        function clicA(){
+            window.document.write('Clicou no Primeiro-------------------------------------------------------------')
+        }
+
+        function clicB(){
+            window.document.write('Clicou no Segundo-------------------------------------------------------------')
+        }
     </script>
 </body>
 </html>
