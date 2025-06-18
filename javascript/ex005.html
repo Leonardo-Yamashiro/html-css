@@ -26,6 +26,18 @@
         h1,p,div{
             padding: 10px;
             margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        div{
+            width: 500px;
+            text-align: center;
+            background-color: darkgreen;
+            color: white;
+        }
+        div:hover{
+            background-color: yellowgreen;
+            color: black;
         }
     </style>
 </head>
@@ -35,6 +47,7 @@
         <p>Aprendendo a usar o DOM em javascript</p>
         <p id="msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus culpa velit provident consequuntur doloremque maiores in veniam qui praesentium labore, ducimus ipsa dignissimos quis tempore impedit corporis rerum libero laborum.</p>
         <div class="box">clique aqui</div>
+        <div>clique aqui</div>
     </main>
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]
