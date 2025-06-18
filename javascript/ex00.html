@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 006</title>
+    <title>Exercicio 00</title>
     <style>
         *{
             padding: 0px;
@@ -25,11 +25,14 @@
             border: 5px solid green;
             padding: 10px;
         }
-        h1,p,div{
+        p,div{
             padding: 10px;
             margin: auto;
+            text-align: justify;
         }
         h1{
+            margin: auto;
+            padding: 10px;
             text-align: center;
         }
         div#area{
@@ -50,23 +53,6 @@
         <div id="area">Clique Aqui</div>
     </main>
     <script>
-        var a = window.document.getElementById('area')
-        a.addEventListener('click',clicar)
-        a.addEventListener('mouseenter',enter)
-        a.addEventListener('mouseleave',sair)
-
-        function clicar(){
-            a.innerText = 'Clicou!'
-            a.style.background = 'red'
-        }
-        function enter(){
-            a.innerText = 'Entrou!'
-            a.style.background = 'green'
-        }
-        function sair(){
-            a.innerText = 'Saiu!'
-            a.style.background = 'green'
-        }
     </script>
 </body>
 </html>
