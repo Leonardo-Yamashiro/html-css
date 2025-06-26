@@ -10,12 +10,16 @@ function verificar(){
         window.alert('ERRO, digite ano')
     }
     else{
+        var fundo = document.getElementById('bd')
+        fundo.style.background = `blue`
+
         var sex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
 
         var imagem = document.createElement('img')
         imagem.setAttribute('id','foto')
 
+        
         if (sex[0].checked){
             if(idade <= 3){
                 imagem.setAttribute('src','imagens/bebe.jpg')
@@ -36,6 +40,10 @@ function verificar(){
             resposta.appendChild(imagem)
         }
         else{
+
+            var fundo = document.getElementById('bd')
+            fundo.style.background = `pink`
+
             if(idade <= 3){
                 imagem.setAttribute('src','imagens/bebe.jpg')
             }
