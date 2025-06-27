@@ -8,5 +8,11 @@ public class numerosprimos{
         System.out.print("Digite um número: ");
         int numero = input.nextInt();
         input.close();
+
+        int x1 = 2;
+        while(x1 <= numero){
+            System.out.println(x1);
+            x1++;
+        }
     }
 }
