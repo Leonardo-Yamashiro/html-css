@@ -49,9 +49,11 @@
             text-align: justify;
             padding: 10px;
         }
+        p{
+            padding: 5px;
+        }
         label{
             color: darkgreen;
-            padding: 10px;
         }
         input.botao{
             padding: 5px;
@@ -82,12 +84,21 @@
 
     <main>
         <div>
-            <label for="iinicio">Inicio: </label><input type="number" name="iinicio" id="iinicio">
-            <br>
-            <label for="ifim">Fim: </label><input type="number" name="ifim" id="ifim">
-            <br>
-            <label for="ipasso">Passo: </label><input type="number" name="ipasso" id="ipasso">
-            <br>
+            <p>
+                <label for="iinicio">Inicio: </label>
+                <input type="number" name="inicio" id="iinicio">
+            </p>
+            
+            <p>
+                <label for="ifim">Fim: </label>
+                <input type="number" name="fim" id="ifim">
+            </p>
+            
+            <p>
+                <label for="ipasso">Passo: </label>
+                <input type="number" name="passo" id="ipasso">
+            </p>
+            
             <input type="button" value="Contagem" class="botao" onclick="contar()">
         </div>
         <div id="resp"></div>
