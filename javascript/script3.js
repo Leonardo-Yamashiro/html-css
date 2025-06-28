@@ -7,6 +7,7 @@ function contar(){
     if(ini.value.length == 0 || fim.value.length == 0){
         window.alert("ERRO, faltam dados!")
     }
+    
     else{
         resp.innerHTML = "Contando... <br>"
 
