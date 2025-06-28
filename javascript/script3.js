@@ -8,7 +8,7 @@ function contar(){
         window.alert("ERRO, faltam dados!")
     }
     else{
-        resp.innerHTML = "Contando... "
+        resp.innerHTML = "Contando... <br>"
 
         var i = Number(ini.value)
         var f = Number(fim.value)
@@ -18,21 +18,29 @@ function contar(){
         }
         else{
             var p = Number(passo.value)
+            if (p < 0){
+                p = p*(-1)
+                resp.innerHTML += "Passo Negativo, Alterado para Positivo <br>"
+            }
+            if(p == 0){
+                p = 1
+                resp.innerHTML += "Passo Invalido, Alterado para 1 <br>"
+            }
         }
 
         if(i > f){
             for(var c = i; c >= f; c -= p){
-                resp.innerHTML += c + " > "
+                resp.innerHTML += c + " >"
             }
         }
         else if (i == f){
-            resp.innerHTML += c 
+            resp.innerHTML += i 
         }
         else{
             for(var c = i; c <= f; c += p){
-                resp.innerHTML += c + " > "
+                resp.innerHTML += c + " >"
             }
         }
-        resp.innerHTML += "FIM \u{1F600}"
+        resp.innerHTML += " FIM \u{1F600}"
     }
 }
