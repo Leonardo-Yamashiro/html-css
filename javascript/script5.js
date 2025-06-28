@@ -11,11 +11,9 @@ function primos(){
             r.innerHTML = "Numero Impossivel"
         }
         else{
-            r.innerHTML = "Numeros Primos até " + n + "<br>"
-
-            for (var i = 2; i <=n; i++){
+            r.innerHTML = "Numeros Primos até " + n + ":<br>"
+            for (var i = 2; i <= n; i++){
                 var j = 2
-
                 while (j < n){
                     if(i%j == 0 && i != j){
                         break
