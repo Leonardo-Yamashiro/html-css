@@ -15,7 +15,15 @@ function primos(){
             for(var i=0;i<n;i++){
                 vetor.push(i)
             }
-            r.innerHTML = vetor
+            r.innerHTML = "Lista = ["
+            for(var n = 0; n < vetor.length; n++){
+                if(n == vetor.length - 1){
+                    r.innerHTML += vetor[n]
+                    break
+                }
+                r.innerHTML += vetor[n] + "; "
+            }
+            r.innerHTML += "]"
         }
     }
 }
