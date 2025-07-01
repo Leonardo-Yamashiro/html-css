@@ -40,9 +40,12 @@ function fatorial(){
         if(n < 1){
             r.innerHTML = "Impossivel"
         }
+        else if(n == 1){
+            r.innerHTML = "1! = 1"
+        }
         else{
             var resp = 1
-            r.innerHTML = "Fatorial de " + n + " = "
+            r.innerHTML = n + "! = "
             for(var x = 1; x <= n; x++){
                 resp = resp * x
                 if(x == n){
