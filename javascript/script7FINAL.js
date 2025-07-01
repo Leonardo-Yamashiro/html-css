@@ -30,6 +30,7 @@ function add(){
                 if(inLista(num,vet)){
                     vet.push(num)
                     lista.innerHTML += "<option value=" + " " + "> Adicionado " + num +"</option>"
+                    resposta.innerHTML = ""
                 }
                 else{
                     window.alert("ERRO: valor ja existe")
