@@ -38,3 +38,28 @@ function add(){
         }
     }
 }
+
+function media(){
+    if(vet.length != 0){
+        var maior = 0
+        var menor = 101
+        var media = 0
+        var tamanho = vet.length
+        for(var i = 0; i < tamanho ;i++){
+            media += vet[i]
+            if(maior < vet[i]){
+                maior = vet[i]
+            }
+            if(menor > vet[i]){
+                menor = vet[i]
+            }
+        }
+        var resultado = media / tamanho
+        resposta.innerHTML = "Media = " + resultado + "<br>"
+        resposta.innerHTML += "Maior = " + maior + "<br>"
+        resposta.innerHTML += "Menor = " + menor + "<br>"
+    }
+    else{
+        window.alert("ERRO: lista vazia")
+    }
+}
