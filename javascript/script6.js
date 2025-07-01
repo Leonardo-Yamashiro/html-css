@@ -27,3 +27,31 @@ function primos(){
         }
     }
 }
+
+function fatorial(){
+    var num = document.getElementById("inumber")
+    var r = document.getElementById("resp")
+
+    if(num.value.length == 0){
+        window.alert("ERRO")
+    }
+    else{
+        var n = Number(num.value)
+        if(n < 1){
+            r.innerHTML = "Impossivel"
+        }
+        else{
+            var resp = 1
+            r.innerHTML = "Fatorial de " + n + " = "
+            for(var x = 1; x <= n; x++){
+                resp = resp * x
+                if(x == n){
+                    r.innerHTML += x + " = "
+                    break
+                }
+                r.innerHTML += x + " x "
+            }
+            r.innerHTML += resp
+        }
+    }
+}
