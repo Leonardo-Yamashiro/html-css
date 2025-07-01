@@ -46,6 +46,7 @@ function media(){
         var menor = 101
         var media = 0
         var tamanho = vet.length
+
         for(var i = 0; i < tamanho ;i++){
             media += vet[i]
             if(maior < vet[i]){
@@ -55,8 +56,8 @@ function media(){
                 menor = vet[i]
             }
         }
-        var resultado = media / tamanho
-        resposta.innerHTML = "Media = " + resultado + "<br>"
+
+        resposta.innerHTML = "Media = " + (media/tamanho) + "<br>"
         resposta.innerHTML += "Maior = " + maior + "<br>"
         resposta.innerHTML += "Menor = " + menor + "<br>"
     }
