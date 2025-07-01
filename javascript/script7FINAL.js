@@ -46,6 +46,8 @@ function media(){
         var menor = 101
         var media = 0
         var tamanho = vet.length
+        var par = 0
+        var impar = 0
 
         for(var i = 0; i < tamanho ;i++){
             media += vet[i]
@@ -55,11 +57,20 @@ function media(){
             if(menor > vet[i]){
                 menor = vet[i]
             }
+            if(vet[i]%2 == 0){
+                par++
+            }
+            else{
+                impar++
+            }
         }
 
         resposta.innerHTML = "Media = " + (media/tamanho) + "<br>"
         resposta.innerHTML += "Maior = " + maior + "<br>"
         resposta.innerHTML += "Menor = " + menor + "<br>"
+        resposta.innerHTML += "Tamanho = " + tamanho + "<br>"
+        resposta.innerHTML += "Numeros Pares = " + par + "<br>"
+        resposta.innerHTML += "Numeros Impares = " + impar + "<br>"
     }
     else{
         window.alert("ERRO: lista vazia")
