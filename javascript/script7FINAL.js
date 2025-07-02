@@ -43,8 +43,8 @@ function add(){
 function media(){
     if(vet.length != 0){
         var maior = 0
-        var menor = 101
-        var media = 0
+        var menor = vet[0]
+        var media = vet[0]
         var tamanho = vet.length
         var par = 0
         var impar = 0
@@ -71,6 +71,7 @@ function media(){
         resposta.innerHTML += "Tamanho = " + tamanho + "<br>"
         resposta.innerHTML += "Numeros Pares = " + par + "<br>"
         resposta.innerHTML += "Numeros Impares = " + impar + "<br>"
+        resposta.innerHTML += "Total = " + media + "<br>"
     }
     else{
         window.alert("ERRO: lista vazia")
