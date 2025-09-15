@@ -80,7 +80,7 @@ function bincalc(){
             var soma = 0
             var pot = 1
             r.innerHTML = "2^" + n + " = "
-            for(var x = 1; x <= n; x++){
+            for(var x = 0; x <= n; x++){
                 soma = soma + pot
                 if(x == n){
                     r.innerHTML +=pot + "<br>"
