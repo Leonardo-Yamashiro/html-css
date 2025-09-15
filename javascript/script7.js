@@ -58,3 +58,38 @@ function fatorial(){
         }
     }
 }
+
+
+function bincalc(){
+    var num = document.getElementById("inumber")
+    var r = document.getElementById("resp")
+
+    if(num.value.length == 0){
+        window.alert("ERRO")
+    }
+    else{
+        var n = Number(num.value)
+        if(n < 0){
+            r.innerHTML = "Impossivel"
+            window.alert("ERRO")
+        }
+        else if(n == 0){
+            r.innerHTML = "2^0 = 1"
+        }
+        else{
+            var soma = 0
+            var pot = 1
+            r.innerHTML = "2^" + n + " = "
+            for(var x = 1; x <= n; x++){
+                soma = soma + pot
+                if(x == n){
+                    r.innerHTML +=pot + "<br>"
+                    break
+                }
+                r.innerHTML += pot + ", "
+                pot = pot * 2
+            }
+            r.innerHTML += "SOMA = " + soma
+        }
+    }
+}
