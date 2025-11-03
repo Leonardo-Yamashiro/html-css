@@ -36,18 +36,22 @@ section > article{
 
 article.media-text{
     display: flex;
+    justify-content: space-between;
     flex-flow: row wrap-reverse;
 }
 article.text-media{
     display: flex;
+    justify-content: space-between;
     flex-flow: row wrap;
 }
 
 article > div.text{
     flex: 1 1 500px;
+    border: 2px dashed red;
 }
 article > div.media{
     flex: 1 0 500px;
+    border: 2px dashed green;
 }
 
 p{
