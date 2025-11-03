@@ -25,4 +25,31 @@ header, footer, section.normal{
 section.flex-content{
     background-color: lightgray;
     padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section > article{
+    border: 2px dashed blue;
+}
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article > div.text{
+    flex: 1 1 500px;
+}
+article > div.media{
+    flex: 1 0 500px;
+}
+
+p{
+    padding: 0px 5px;
 }
