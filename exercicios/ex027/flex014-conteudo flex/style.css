@@ -54,6 +54,11 @@ article > div.media{
     border: 2px dashed green;
 }
 
-p{
+div.media img{
+    display: block;
+    margin: auto;
+}
+
+h1 , h2 , p{
     padding: 0px 5px;
 }
