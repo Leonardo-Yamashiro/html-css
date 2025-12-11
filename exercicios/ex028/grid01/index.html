@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid Layout na pratica</title>
+    <style>
+        *{
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        div.container{
+            border: 5px solid blue;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        div.item{
+            border: 5px solid greenyellow;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
 </body>
 </html>
