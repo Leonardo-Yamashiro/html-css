@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,11 @@
         }
         main{
             display: grid;
-            grid-template: 100px 100px 100px/1fr 1fr 1fr;
+            height: 250px;
+            grid-template: repeat(3,auto)/repeat(3,auto);
             gap: 10px;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: normal;
+            place-items: start center;
+            place-content: space-between end;
 
             border: 5px dashed blue;
             background-color: cyan;
