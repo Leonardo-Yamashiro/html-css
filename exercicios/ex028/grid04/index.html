@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        main{
+            display: grid;
+            grid-template: 100px 100px 100px/1fr 1fr 1fr;
+            border: 2px dashed blue;
+        }
+        div.item{
+            border: 2px solid red;
+        }
+    </style>
+    <title>Grid</title>
 </head>
 <body>
-    
+    <main>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </main>
 </body>
 </html>
