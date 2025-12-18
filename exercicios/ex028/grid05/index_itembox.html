@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caixas com Propriedades de Item</title>
+    <style>
+        *{
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        main{
+            border: 3px solid blue;
+            display: grid;
+            grid-template: 100px 100px 100px/auto auto auto;
+            grid-auto-rows: 100px;
+            gap: 5px;
+        }
+        div{
+            border: 3px solid red;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+        <div class="item2">H</div>
+        <div class="item2">I</div>
+    </main>
 </body>
 </html>
