@@ -5,3 +5,10 @@ body{
     margin: 0px;
     box-sizing: border-box;
 }
+
+.container{
+    border: 2px solid green;
+    background-color: greenyellow;
+    display: grid;
+    grid-template: repeat(3,100px)/500px;
+}
