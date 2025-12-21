@@ -32,7 +32,7 @@ body{
     border: 2px solid black;
 }
 .caixa3{
-    grid-area: 2 / 2/ 4 / 4;
+    grid-area: 2 / 2 / 4 / 4 ;
     
     background-color: cyan;
     border: 2px solid black;
