@@ -4,6 +4,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+  background-color: lightgray;
+  color: blue;
+}
 /* 
   Variáveis para cores:
   --fundo-principal
