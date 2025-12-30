@@ -58,13 +58,28 @@ header nav#menu ul li a:hover{
   cursor: pointer;
 }
 
-section#ficha{
+
+main{
+  padding: 10px;
+}
+main section#ficha{
   background-color: var(--fundo-card);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
-section#ficha img.foto{
+main section#ficha img.foto{
   width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+  display: block;
+  margin: auto;
+}
+main section#ficha h1{
+  color: var(--destaque);
+  margin: 15px 0px;
+  text-align: center;
 }
