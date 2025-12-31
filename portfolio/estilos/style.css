@@ -92,6 +92,14 @@ main section#ficha div#social{
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
-  gap: 10px;
+  gap: 20px;
   margin: 10px 0px;
+}
+main section#ficha div#social a{
+  color: var(--destaque);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+main section#ficha div#social a:hover{
+  color: var(--destaque-inverso);
 }
