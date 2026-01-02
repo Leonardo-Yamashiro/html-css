@@ -112,10 +112,11 @@ main section#detalhes{
 main section#detalhes article{
   background-color: var(--fundo-card);
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 main section#detalhes article h2{
   color: var(--destaque);
-  margin-bottom: 10px;
+  padding: 10px;
   text-align: center;
 }
 main section#detalhes article#video div.video-container{
