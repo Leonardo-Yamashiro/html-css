@@ -30,6 +30,9 @@ body{
   color: var(--texto);
 }
 
+
+
+/*-----Navegador-----*/
 header{
   background-color: var(--destaque);
   color: var(--texto);
@@ -59,12 +62,18 @@ header nav#menu ul li a:hover{
 }
 
 
+
+/*-----Centro-----*/
 main{
   display: grid;
   grid-template-columns: auto 90vw auto;
   gap: 20px;
   margin-top: 20px;
 }
+
+
+
+/*-----Seção de Perfil-----*/
 main section#ficha{
   background-color: var(--fundo-card);
   padding: 20px;
@@ -103,9 +112,12 @@ main section#ficha div#social a{
 }
 main section#ficha div#social a:hover{
   color: var(--destaque-inverso);
+  cursor: pointer;
 }
 
 
+
+/*-----Seção de Detalhes-----*/
 main section#detalhes{
   grid-column: 2;
 }
@@ -124,7 +136,6 @@ main section#detalhes article#video div.video-container{
   width: 100%;
   margin: auto;
   aspect-ratio: 16/9;
-  background-color: var(--destaque);
 }
 main section#detalhes article#video div.video-container iframe{
   position: absolute;
