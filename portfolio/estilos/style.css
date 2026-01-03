@@ -184,3 +184,8 @@ section#detalhes article#video div.video-container iframe{
   height: 100%;
   border-radius: 5px;
 }
+@media screen and (min-width: 768px){
+  #skill-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
