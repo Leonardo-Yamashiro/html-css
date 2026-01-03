@@ -152,19 +152,13 @@ section#detalhes article#video div.video-container iframe{
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-  padding: 0 10px;
+  padding: 0px 10px 20px 10px;
 }
 #skill-container .item{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
-}
-#skill-container .info{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5px;
+  flex-flow: column nowrap;
 }
 #skill-container .nome{
   font-weight: bold;
