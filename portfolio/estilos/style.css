@@ -160,6 +160,11 @@ section#detalhes article#video div.video-container iframe{
   align-items: center;
   flex-flow: column nowrap;
 }
+#skill-container .info{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 #skill-container .nome{
   font-weight: bold;
   color: var(--texto);
