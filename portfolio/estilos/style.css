@@ -189,3 +189,10 @@ section#detalhes article#video div.video-container iframe{
     grid-template-columns: 1fr 1fr;
   }
 }
+
+
+
+/*-----Seção de Formação-----*/
+.formacao-container{
+  background-color: red;
+}
