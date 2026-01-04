@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 :root{
-  --fundo-principal: #e8e8e8;
+  --fundo-principal: #f0f0f0;
   --texto: #222222;
   --texto-inverso:#ffffff;
   --destaque: #0077ff;
@@ -227,3 +227,7 @@ section#detalhes article#video div.video-container iframe{
     flex-flow: column-reverse nowrap;
   }
 }
+
+
+
+/*-----Seção de Projetos-----*/
