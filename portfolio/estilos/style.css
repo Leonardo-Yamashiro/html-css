@@ -194,5 +194,19 @@ section#detalhes article#video div.video-container iframe{
 
 /*-----Seção de Formação-----*/
 .formacao-container{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  padding: 0 10px 10px 10px;
   background-color: red;
+}
+.formacao-container .curso{
+  background-color: var(--fundo-principal);
+  border-radius: 10px;
+  border-left: 5px solid var(--destaque-inverso);
+}
+@media screen and (min-width: 768px){
+  .formacao-container{
+    flex-flow: column-reverse nowrap;
+  }
 }
