@@ -269,5 +269,6 @@ section#detalhes article#video div.video-container iframe{
   #projeto-container .foto{
     aspect-ratio: 1/1;
     max-width: 20%;
+    max-height: 200px;
   }
 }
