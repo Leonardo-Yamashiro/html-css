@@ -258,6 +258,15 @@ section#detalhes article#video div.video-container iframe{
   overflow: hidden;
   border-radius: 10px;
 }
+#projeto-container .titulo{
+  color: var(--destaque);
+  font-size: 1.1em;
+}
+#projeto-container .periodo{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
 @media screen and (min-width: 768px){
   #projeto-container .projeto{
     flex-direction: row-reverse;
