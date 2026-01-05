@@ -251,3 +251,23 @@ section#detalhes article#video div.video-container iframe{
   border-left: 15px solid var(--destaque-inverso);
   cursor: pointer;
 }
+#projeto-container .foto{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px){
+  #projeto-container .projeto{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  #projeto-container .projeto-info{
+    max-width: 80%;
+  }
+  #projeto-container .foto{
+    aspect-ratio: 1/1;
+    max-width: 20%;
+  }
+}
