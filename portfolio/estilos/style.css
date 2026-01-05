@@ -272,3 +272,22 @@ section#detalhes article#video div.video-container iframe{
     max-height: 200px;
   }
 }
+
+
+
+/*-----FIM-----*/
+footer{
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 20px;
+}
+footer a{
+  color: var(--texto-inverso);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+}
+footer a:hover{
+  color: var(--destaque-inverso);
+}
