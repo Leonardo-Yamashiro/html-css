@@ -187,11 +187,6 @@ section#detalhes article#video div.video-container iframe{
   height: 100%;
   border-radius: 5px;
 }
-@media screen and (min-width: 768px){
-  #skill-container{
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
 
 
@@ -224,11 +219,6 @@ section#detalhes article#video div.video-container iframe{
 }
 .formacao-container .curso .titulacao{
   color: var(--texto);
-}
-@media screen and (min-width: 768px){
-  .formacao-container{
-    flex-flow: column-reverse nowrap;
-  }
 }
 
 
@@ -270,20 +260,6 @@ section#detalhes article#video div.video-container iframe{
   font-weight: bold;
   color: var(--texto);
 }
-@media screen and (min-width: 768px){
-  #projeto-container .projeto{
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-  #projeto-container .projeto-info{
-    max-width: 80%;
-  }
-  #projeto-container .foto{
-    aspect-ratio: 1/1;
-    max-width: 20%;
-    max-height: 200px;
-  }
-}
 
 
 
@@ -302,4 +278,28 @@ footer a{
 }
 footer a:hover{
   color: var(--destaque-inverso);
+}
+
+
+
+/*-----Media Query-----*/
+@media screen and (min-width: 768px){
+  #skill-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .formacao-container{
+    flex-flow: column-reverse nowrap;
+  }
+  #projeto-container .projeto{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  #projeto-container .projeto-info{
+    max-width: 80%;
+  }
+  #projeto-container .foto{
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
+  }
 }
