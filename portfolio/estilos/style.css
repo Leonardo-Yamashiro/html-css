@@ -29,6 +29,13 @@ body{
   background-color: var(--fundo-principal);
   color: var(--texto);
 }
+body.escuro{
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso:#333333;
+  --destaque: #ff5522;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444;}
 
 
 
@@ -268,7 +275,7 @@ footer{
   background-color: var(--destaque);
   color: var(--texto-inverso);
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 footer a{
   color: var(--texto-inverso);
