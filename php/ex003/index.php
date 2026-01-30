@@ -16,6 +16,12 @@
         const PAIS = "Brasil";
         
         echo "Muito prazer em conhecer $nome $sobrenome! Voce mora no " . PAIS ;
+
+        $numero = 12.5;
+        $binario = false;
+
+        $nomeCompletoClient = "Camel Case";
+        $telefone_contato_fornecedor = "Snake Case";
     ?>
 </body>
 </html>
