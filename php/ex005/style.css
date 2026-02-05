@@ -1,0 +1,71 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+  --fundo-principal: #efefef;
+  --texto: #222222;
+  --texto-inverso:#ffffff;
+  --destaque: #008000;
+  --destaque-inverso: #9acd32;
+  --fundo-card: #ffffff;
+}
+body{
+  height: 100dvh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+  background-color: var(--fundo-principal);
+  color: var(--texto);
+  transition: background-color 0.5s, color 0.7s;
+
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+}
+
+header , footer{
+  background-image: linear-gradient(to bottom, var(--destaque-inverso), var(--destaque));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 , footer p{
+  font-variant: small-caps;
+  color: var(--fundo-card);
+  text-shadow: 2px 1px 0px black;
+}
+
+section{
+  margin: auto;
+}
+form{
+  width: 500px;
+  background-color: var(--fundo-card);
+  padding: 10px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+form label{
+  font-variant: small-caps;
+  color: var(--texto);
+}
+form #idnome, form #idsobrenome{
+  padding: 5px;
+}
+form #idenviar{
+  padding: 5px;
+  background-color: var(--destaque);
+  color: var(--fundo-card);
+  border: none;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+form #idenviar:hover{
+  background-color: var(--destaque-inverso);
+  color: var(--texto);
+  cursor: pointer;
+}
