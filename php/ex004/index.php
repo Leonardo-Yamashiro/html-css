@@ -49,6 +49,14 @@
 
         $p = new Pessoa;
         var_dump($p);
+
+        $var = "teste";
+        const X2 = "Teste";
+        echo '$var ';
+        echo "$var ";
+        echo "$var " . X2;
+        echo "texto \"$var\" texto";
+        echo "\n $var";
     ?>
 </body>
 </html>
