@@ -42,11 +42,9 @@ footer a:hover{
 
 section , main{
   margin: auto;
-  background-color: red;
 }
 form , div{
   width: 500px;
-  height: 200px;
   background-color: var(--fundo-card);
   padding: 10px;
   border-radius: 20px;
