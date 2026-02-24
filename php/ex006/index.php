@@ -8,7 +8,10 @@
 <body>
     <?php 
     $res = 5 + 2 / 2;
-    echo "5 + 2 / 2 = $res";
+    echo "5 + 2 / 2 = $res\n ";
+    $x = "2" + "2";
+    $y =  "2" . "2";
+    echo "$x; $y\n";
     ?>
 </body>
 </html>
