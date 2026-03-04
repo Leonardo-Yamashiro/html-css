@@ -98,12 +98,11 @@
     <main>
         <div>
             <?php
-                $numero = $_GET["numero"] ?? "Sem Numero";
-                $ante = $numero-1;
-                $suce = $numero+1;
-                echo "<p>O numero escolhido é $numero.</p>";
-                echo "<p>O antecessor é $ante.</p>";
-                echo "<p>O sucessor é $suce.</p>";
+                $numero = $_REQUEST["numero"] ?? 0;
+                $ante = $numero - 1;//pode gerar erro
+                echo "<p>O numero escolhido é <strong>$numero</strong>.</p>";
+                echo "<p>O antecessor de $numero é <strong>$ante</strong>.</p>";
+                echo "<p>O sucessor de $numero é <strong>" . ($numero + 1) . "</strong>.</p>";
             ?>
              <a href="index.html">Voltar</a>
         </div>

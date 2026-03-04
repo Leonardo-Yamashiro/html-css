@@ -64,7 +64,7 @@
   padding: 5px;
   border-radius: 5px;
   }
-  form #idenviar , main div a{
+  form #idenviar , div a{
   padding: 5px;
   background-color: var(--destaque);
   color: var(--fundo-card);
@@ -74,7 +74,7 @@
   font-variant: small-caps;
   border-radius: 5px;
   }
-  form #idenviar:hover , main div a:hover{
+  form #idenviar:hover , div a:hover{
   background-color: var(--destaque-inverso);
   color: var(--texto);
   cursor: pointer;
