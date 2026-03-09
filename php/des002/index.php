@@ -24,7 +24,7 @@
                 $num = random_int(0,100);
                 echo "<p>Metodo Random_INT = $num</p>";
             ?>
-            <button id="idenviar" ondblclick="javascript:document.location.reload()">Gerar numeros novos</button>
+            <button id="idenviar" onclick="javascript:document.location.reload()">Gerar numeros novos</button>
         </div>
     </main>
     <footer>
