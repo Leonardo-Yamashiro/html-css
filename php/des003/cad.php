@@ -18,7 +18,7 @@
                 $cota = 5.17;
                 $real = $_GET["numero"] ?? "0";
                 $dolar = $real / $cota;
-                //echo "Seus R\$" . numfmt_format_currency($padrao, $real,"BRL") . " equivalem à US\$" . number_format($dolar,2);
+                //echo "Seus R\$" . numfmt_format_currency($padrao, $real,"BRL") . " equivalem à US\$" . numfmt_format_currency($padrao, $dolar,"USD");
                 echo "Seus R\$" . number_format($real,2) . " equivalem à US\$" . number_format($dolar,2);
             ?>
             <button id="idenviar" onclick="javascript:history.go(-1)">Voltar</button>
