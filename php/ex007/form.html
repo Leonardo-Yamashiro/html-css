@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperGlobais</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100dvh;
+            background-color: greenyellow;
+        }
+        main{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: whitesmoke;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 5px;
+            justify-content: space-around;
+        }
+        input{
+            padding: 5px;
+        }
+        button{
+            background-color: red;
+            color: white;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            padding: 5px;
+            font-size: larger;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: yellow;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="superglobal.php?tipo=Aluno&turno=Noite" method="post">
+            <label for="usu">Usuario:</label>
+            <input type="text" name="usu" id="usu">
+            <label for="sen">Senha:</label>
+            <input type="password" name="sen" id="sen">
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+</body>
+</html>
