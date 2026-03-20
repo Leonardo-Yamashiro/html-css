@@ -25,9 +25,9 @@
         ?>
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get">
             <label for="numero1">Coloque Valor em Reais:</label>
-            <input type="number" name="numero1" id="inumero1" value="0" step="0.001">
+            <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>>" step="0.001">
             <label for="numero2">Coloque Valor Desejado em Dolares:</label>
-            <input type="number" name="numero2" id="inumero2" value="0" step="0.001">
+            <input type="number" name="numero2" id="inumero2" value="<?= $valor2 ?>" step="0.001">
             
             <input type="submit" value="Calcular" id="idenviar">
 
