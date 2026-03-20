@@ -25,17 +25,17 @@
         ?>
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get">
             <label for="numero1">Coloque Valor em Reais:</label>
-            <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>>" step="0.001">
+            <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>" step="0.01">
             <label for="numero2">Coloque Valor Desejado em Dolares:</label>
-            <input type="number" name="numero2" id="inumero2" value="<?= $valor2 ?>" step="0.001">
+            <input type="number" name="numero2" id="inumero2" value="<?= $valor2 ?>" step="0.01">
             
             <input type="submit" value="Calcular" id="idenviar">
 
             <?php
                 $real = $valor1/$cota;
                 $dolar = $valor2*$cota;
-                echo "<p>Valor obtido: " . number_format($real,2) . " com $valor1.</p>";
-                echo "<p>Valor necessario: " . number_format($dolar,2) . " para $valor2.</p>";
+                echo "<p>Valor obtido " . number_format($real,2) . " com $valor1 reais.</p>";
+                echo "<p>Valor necessario " . number_format($dolar,2) . " para $valor2 dolares.</p>";
             ?>
         </form>
     </section>
