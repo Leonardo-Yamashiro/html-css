@@ -34,6 +34,7 @@
             <?php
                 $real = $valor1/$cota;
                 $dolar = $valor2*$cota;
+                echo "<p>Valor dolar: " . number_format($cota,2) . ".</p>";
                 echo "<p>Valor obtido " . number_format($real,2) . " com $valor1 reais.</p>";
                 echo "<p>Valor necessario " . number_format($dolar,2) . " para $valor2 dolares.</p>";
             ?>

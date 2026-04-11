@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Desafio 007</h1>
+    </header>
+    <section>
+        <?php
+            $valor = $_GET['numero']??0;
+        ?>
+        <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get">
+
+            <label for="numero">Digite seu salario:</label>
+            <input type="number" name="numero" id="inumero" value="<?= $valor ?>" step="0.01">
+            <p>O slario minimo atual é <strong>R$ 1.518,00</strong>.</p>
+            <input type="submit" value="Calcular" id="idenviar">
+        </form>
+
+        <br>
+
+        <div id="container">
+            <h1>Analise do Salario</h1>
+            <?php
+                if ($valor > 1518){
+                    $result = number_format($valor/1518);
+                    $resto = $valor-($result*1518);
+                    echo "Voce recebe " . number_format($result) . " salario minimo + " . number_format($resto,2);
+                }
+                elseif ($valor == 1518){
+                    $result = number_format($valor/1518);
+                    echo "Voce recebe 1 salario minimo";
+                }
+                else{
+                    echo "Voce NAO recebe salario minimo";
+                }
+            ?>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site desenvolvido por Leonardo Siqueira Yamashiro</p>
+    </footer>
+</body>
+</html>
