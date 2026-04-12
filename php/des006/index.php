@@ -13,15 +13,15 @@
     <section>
         <?php
             $valor1 = $_GET['numero1']??0;
-            $valor2 = $_GET['numero2']??0;
+            $valor2 = $_GET['numero2']??1;
         ?>
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get">
 
             <label for="numero1">Dividendo:</label>
-            <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>">
+            <input type="number" name="numero1" id="inumero1" min="0" value="<?= $valor1 ?>">
 
             <label for="numero2">Divisor:</label>
-            <input type="number" name="numero2" id="inumero2" value="<?= $valor2 ?>">
+            <input type="number" name="numero2" id="inumero2" min="1" value="<?= $valor2 ?>">
             
             <input type="submit" value="Calcular" id="idenviar">
         </form>
@@ -32,7 +32,7 @@
             <h1>Divisão</h1>
             <?php
             echo "<p>$valor1 / $valor2</p>";
-            $result = $valor1 / $valor2;
+            $result = (int) ($valor1 / $valor2);
             $resto = $valor1 % $valor2;
             echo "<p>Resultado = $result</p>";
             echo "<p>Resto = $resto</p>";
