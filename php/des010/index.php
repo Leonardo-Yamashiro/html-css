@@ -18,7 +18,7 @@
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get">
 
             <label for="numero1">Digite o seu ano de nascimento:</label>
-            <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>" max="<?= $ano ?>">
+            <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>" max="<?= $ano ?>" min="1900">
 
             <label for="ano">Ano atual:</label>
             <input type="number" name="ano" id="iano" value="<?= $ano ?>">
@@ -33,7 +33,7 @@
             <?php
                 $idade = $ano-$valor1;
 
-                echo "<p>Se voce nasceu em $valor1 e o ano atual é $ano, voce tem:</p><p>$idade anos</p>";
+                echo "<p>Quem nasceu em $valor1 no ano de $ano, vai ter $idade anos.</p>";
             ?>
         </div>
     </section>
