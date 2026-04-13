@@ -20,8 +20,8 @@
             <label for="numero1">Digite um preço:</label>
             <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>" min="0" step="0.01">
 
-            <label for="numero2">Reajuste de <?= $valor2 ?>%</label>
-            <input type="range" name="numero2" id="inumero2" min="0" max="100" value="<?= $valor2 ?>">
+            <label for="numero2">Reajuste de <span id="por">?</span>%</label>
+            <input type="range" name="numero2" id="numero2" min="0" max="100" value="<?= $valor2 ?>" step="1" onclick="mudaValor()">
 
             <input type="submit" value="Calcular" id="idenviar">
         </form>
@@ -41,5 +41,13 @@
     <footer>
         <p>Site desenvolvido por Leonardo Siqueira Yamashiro</p>
     </footer>
+
+    <script>
+        mudaValor()
+
+        function mudaValor(){
+            por.innerText = numero2.value
+        }
+    </script>
 </body>
 </html>
