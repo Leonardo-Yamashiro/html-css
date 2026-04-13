@@ -23,13 +23,13 @@
             <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>">
 
             <label for="numero2">Digite o peso A:</label>
-            <input type="number" name="numero2" id="inumero2" value="<?= $valor2 ?>">
+            <input type="number" name="numero2" id="inumero2" value="<?= $valor2 ?>" min="1">
 
             <label for="numero3">Digite um numero B:</label>
             <input type="number" name="numero3" id="inumero3" value="<?= $valor3 ?>">
 
             <label for="numero4">Digite o peso B:</label>
-            <input type="number" name="numero4" id="inumero4" value="<?= $valor4 ?>">
+            <input type="number" name="numero4" id="inumero4" value="<?= $valor4 ?>" min="1">
 
             <input type="submit" value="Calcular" id="idenviar">
         </form>

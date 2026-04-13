@@ -12,13 +12,13 @@
     </header>
     <section>
         <?php
-            $ano = date("Y");
-            $valor1 = $_GET['numero1']??$ano;
+            $ano = $_GET['ano']??date("Y");
+            $valor1 = $_GET['numero1']??2000;
         ?>
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get">
 
             <label for="numero1">Digite o seu ano de nascimento:</label>
-            <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>">
+            <input type="number" name="numero1" id="inumero1" value="<?= $valor1 ?>" max="<?= $ano ?>">
 
             <label for="ano">Ano atual:</label>
             <input type="number" name="ano" id="iano" value="<?= $ano ?>">
