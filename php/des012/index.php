@@ -28,10 +28,18 @@
             <h1>Calculador de Segundos</h1>
             <?php
                 $sem = (int) ($valor1/604800);
-                $dia = (int) ($valor1/86400);
-                $hora = (int) ($valor1/3600);
-                $min = (int) ($valor1/60);
-                $seg = (int) ($valor1);
+                $resto = $valor1%604800;
+
+                $dia = (int) ($resto/86400);
+                $resto = $resto%86400;
+
+                $hora = (int) ($resto/3600);
+                $resto = $resto%3600;
+
+                $min = (int) (($dia%$hora)/60);
+                $resto = $resto%60;
+
+                $seg = (int) ($resto);
 
                 echo "<p>Semanas: $sem;</p>";
                 echo "<p>Dias: $dia;</p>";
